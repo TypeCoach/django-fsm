@@ -8,7 +8,8 @@ import warnings
 from collections import defaultdict
 from functools import wraps
 from django.db import models
-from django.utils.functional import curry
+# from django.utils.functional import curry
+from functools import partialmethod as curry
 from django_fsm.signals import pre_transition, post_transition
 
 
